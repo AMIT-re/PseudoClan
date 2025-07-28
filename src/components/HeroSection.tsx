@@ -6,11 +6,11 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-gradient-to-br from-background via-background to-primary/5 overflow-hidden pt-32 scroll-mt-32"
+      className="relative min-h-screen flex items-center bg-gradient-to-br from-background via-background to-secondary/5 overflow-hidden pt-32 scroll-mt-32"
     >
       {/* Modern background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
         <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
       </div>
 
@@ -38,11 +38,11 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-4 text-lg group shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button size="lg" className="bg-gradient-to-r from-secondary to-secondary hover:from-secondary/90 hover:to-secondary/90 text-white px-8 py-4 text-lg group shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Started Today
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-2 hover:bg-primary/5">
+              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-2 hover:bg-secondary/5">
                 View Our Work
               </Button>
             </div>
@@ -50,7 +50,7 @@ const HeroSection = () => {
             {/* Feature highlights */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto">
               <div className="flex flex-col items-center space-y-4 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/80 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/70 rounded-xl flex items-center justify-center">
                   <Zap className="text-white" size={24} />
                 </div>
                 <h3 className="font-semibold text-lg">Lightning Fast</h3>
@@ -66,7 +66,7 @@ const HeroSection = () => {
               </div>
 
               <div className="flex flex-col items-center space-y-4 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/80 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary rounded-xl flex items-center justify-center">
                   <Code className="text-white" size={24} />
                 </div>
                 <h3 className="font-semibold text-lg">Custom Built</h3>

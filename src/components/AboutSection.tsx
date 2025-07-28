@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
-            <Badge variant="outline" className="mb-6 text-primary border-primary/30 bg-primary/5 px-4 py-2">
+            <Badge variant="outline" className="mb-6 text-secondary border-secondary/30 bg-secondary/5 px-4 py-2">
               About PseudoClan
             </Badge>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
@@ -23,7 +23,7 @@ const AboutSection = () => {
           {/* Values Grid */}
           <div className="grid lg:grid-cols-3 gap-8 mb-20">
             <div className="group relative bg-card/60 backdrop-blur-sm border border-border/50 rounded-3xl p-8 hover:bg-card/80 transition-all duration-500 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/70 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Lightbulb className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">Innovation First</h3>
@@ -45,7 +45,7 @@ const AboutSection = () => {
             </div>
 
             <div className="group relative bg-card/60 backdrop-blur-sm border border-border/50 rounded-3xl p-8 hover:bg-card/80 transition-all duration-500 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Rocket className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">Growth Driven</h3>
@@ -57,7 +57,7 @@ const AboutSection = () => {
           </div>
 
           {/* Why Choose Us */}
-          <div className="bg-gradient-to-r from-primary/5 via-background to-secondary/5 rounded-3xl p-8 lg:p-16 border border-border/30">
+          <div className="bg-gradient-to-r from-secondary/5 via-background to-secondary/5 rounded-3xl p-8 lg:p-16 border border-border/30">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h3 className="text-4xl font-bold mb-8">
@@ -71,7 +71,7 @@ const AboutSection = () => {
                     { title: "Agile Methodology", desc: "Flexible, iterative approach ensuring quality delivery" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-start space-x-4">
-                      <div className="w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-6 h-6 bg-gradient-to-r from-secondary to-secondary rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                         <CheckCircle className="text-white" size={16} />
                       </div>
                       <div>

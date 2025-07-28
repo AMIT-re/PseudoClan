@@ -45,7 +45,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>Email: info@pseudoclan.com</li>
               <li>Phone: +1 (555) 123-4567</li>
-              <li>Location: Tech Hub, Innovation City</li>
+              <li>Location: Noida</li>
             </ul>
           </div>
         </div>

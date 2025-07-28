@@ -80,7 +80,7 @@ const ServicesSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
-            <Badge variant="outline" className="mb-6 text-primary border-primary/30 bg-primary/5 px-4 py-2">
+            <Badge variant="outline" className="mb-6 text-secondary border-secondary/30 bg-secondary/5 px-4 py-2">
               Our Services
             </Badge>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
@@ -95,18 +95,18 @@ const ServicesSection = () => {
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-24">
             {services.map((service, index) => (
-              <Card key={index} className={`group relative bg-card/60 backdrop-blur-sm border-border/50 hover:bg-card/80 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${service.popular ? 'ring-2 ring-primary/20' : ''}`}>
+              <Card key={index} className={`group relative bg-card/60 backdrop-blur-sm border-border/50 hover:bg-card/80 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${service.popular ? 'ring-2 ring-secondary/20' : ''}`}>
                 {service.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-gradient-to-r from-primary to-secondary text-white px-3 py-1">
+                    <Badge className="bg-gradient-to-r from-secondary to-primary text-white px-3 py-1">
                       <Star className="w-3 h-3 mr-1" />
                       Popular
                     </Badge>
                   </div>
                 )}
                 <CardHeader className="pb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="text-primary" size={28} />
+                  <div className="w-14 h-14 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="text-secondary" size={28} />
                   </div>
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-muted-foreground leading-relaxed">{service.description}</CardDescription>
@@ -115,7 +115,7 @@ const ServicesSection = () => {
                   <ul className="space-y-3 mb-4">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-2 h-2 bg-gradient-to-r from-primary to-secondary rounded-full mr-3 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-gradient-to-r from-secondary to-primary rounded-full mr-3 flex-shrink-0"></div>
                         {feature}
                       </li>
                     ))}
@@ -130,10 +130,10 @@ const ServicesSection = () => {
           </div>
 
           {/* AI Automation Spotlight */}
-          <div className="bg-gradient-to-r from-primary/5 via-background to-secondary/5 rounded-3xl p-8 lg:p-16 border border-border/30 mb-24">
+          <div className="bg-gradient-to-r from-secondary/5 via-background to-primary/5 rounded-3xl p-8 lg:p-16 border border-border/30 mb-24">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge variant="outline" className="mb-6 text-secondary border-secondary/30 bg-secondary/5">
+                <Badge variant="outline" className="mb-6 text-primary border-primary/30 bg-primary/5">
                   Featured Service
                 </Badge>
                 <h3 className="text-4xl font-bold mb-6">
@@ -152,20 +152,20 @@ const ServicesSection = () => {
                     { icon: Brain, title: "Smart Decision Making" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-3 p-3 rounded-lg bg-card/50 border border-border/30">
-                      <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                      <div className="w-8 h-8 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center">
                         <item.icon className="text-white" size={16} />
                       </div>
                       <span className="font-semibold">{item.title}</span>
                     </div>
                   ))}
                 </div>
-                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white group">
+                <Button size="lg" className="bg-gradient-to-r from-secondary to-primary hover:from-secondary/90 hover:to-primary/90 text-white group">
                   Learn More About AI Solutions
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl opacity-60"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-primary/20 rounded-3xl blur-3xl opacity-60"></div>
                 <img 
                   src={workflowAutomation} 
                   alt="AI Workflow Automation" 
@@ -176,10 +176,10 @@ const ServicesSection = () => {
           </div>
 
           {/* Team Building Section */}
-          <div className="bg-gradient-to-l from-primary/5 via-background to-secondary/5 rounded-3xl p-8 lg:p-16 border border-border/30">
+          <div className="bg-gradient-to-l from-secondary/5 via-background to-primary/5 rounded-3xl p-8 lg:p-16 border border-border/30">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative lg:order-1">
-                <div className="absolute inset-0 bg-gradient-to-l from-primary/20 to-secondary/20 rounded-3xl blur-3xl opacity-60"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-secondary/20 to-primary/20 rounded-3xl blur-3xl opacity-60"></div>
                 <img 
                   src={teamBuilding} 
                   alt="Team Collaboration" 
@@ -187,7 +187,7 @@ const ServicesSection = () => {
                 />
               </div>
               <div className="lg:order-2">
-                <Badge variant="outline" className="mb-6 text-primary border-primary/30 bg-primary/5">
+                <Badge variant="outline" className="mb-6 text-secondary border-secondary/30 bg-secondary/5">
                   Our Approach
                 </Badge>
                 <h3 className="text-4xl font-bold mb-6">
@@ -205,7 +205,7 @@ const ServicesSection = () => {
                     { title: "Knowledge Transfer", desc: "Training and documentation for your team" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-card/50 border border-border/30">
-                      <div className="w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                      <div className="w-6 h-6 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                       <div>
@@ -215,7 +215,7 @@ const ServicesSection = () => {
                     </div>
                   ))}
                 </div>
-                <Button variant="outline" size="lg" className="border-2 hover:bg-primary/5 group">
+                <Button variant="outline" size="lg" className="border-2 hover:bg-secondary/5 group">
                   Discover Our Process
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>

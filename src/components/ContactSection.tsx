@@ -71,7 +71,7 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
-            <Badge variant="outline" className="mb-6 text-primary border-primary/30 bg-primary/5 px-4 py-2">
+            <Badge variant="outline" className="mb-6 text-secondary border-secondary/30 bg-secondary/5 px-4 py-2">
               Get In Touch
             </Badge>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
@@ -107,7 +107,7 @@ const ContactSection = () => {
                           onChange={handleInputChange}
                           required
                           placeholder="John Doe"
-                          className="h-12 bg-background/50 border-border/50 focus:border-primary/50"
+                          className="h-12 bg-background/50 border-border/50 focus:border-secondary/50"
                         />
                       </div>
                       <div className="space-y-2">
@@ -122,7 +122,7 @@ const ContactSection = () => {
                           onChange={handleInputChange}
                           required
                           placeholder="john@example.com"
-                          className="h-12 bg-background/50 border-border/50 focus:border-primary/50"
+                          className="h-12 bg-background/50 border-border/50 focus:border-secondary/50"
                         />
                       </div>
                     </div>
@@ -137,7 +137,7 @@ const ContactSection = () => {
                         value={formData.company}
                         onChange={handleInputChange}
                         placeholder="Your Company"
-                        className="h-12 bg-background/50 border-border/50 focus:border-primary/50"
+                        className="h-12 bg-background/50 border-border/50 focus:border-secondary/50"
                       />
                     </div>
 
@@ -153,7 +153,7 @@ const ContactSection = () => {
                         required
                         placeholder="Tell us about your project, goals, and how we can help..."
                         rows={6}
-                        className="bg-background/50 border-border/50 focus:border-primary/50 resize-none"
+                        className="bg-background/50 border-border/50 focus:border-secondary/50 resize-none"
                       />
                     </div>
 
@@ -161,7 +161,7 @@ const ContactSection = () => {
                       type="submit" 
                       size="lg" 
                       disabled={isSubmitting}
-                      className="w-full h-14 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white text-lg group"
+                      className="w-full h-14 bg-gradient-to-r from-secondary to-secondary hover:from-secondary/90 hover:to-secondary/90 text-white text-lg group"
                     >
                       {isSubmitting ? (
                         <>
